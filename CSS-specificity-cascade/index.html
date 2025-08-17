@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean Blog</title>
+  <style>
+    /*the specificity of this 1*/
+   .h1{
+    color:yellow;
+   }
+    /*the specificity of this 10*/
+   .cred{
+    color:red;
+   }
+    /*the specificity of this 10*/
+   .cpurple{
+    color:purple; /*only this color will be applied because of cascade algorithm*/
+   /*this is an example of attribute selector*/
+   }
+    /*the specificity of this 10*/
+   [data-x=a]{
+    background-color: palevioletred;
+   }
+   /*small quiz*/
+    /*the specificity of this 1+10+10+10+10=41*/
+   a.harryclass.rohan-class[href]:hover{
+    color:blueviolet;
+   }
+  </style>
+</head>
+<body>
+  <div>
+    <h1 class="yellow cred cpurple" data-x="a">CSS specificity</h1>
+  </div>
+</body>
+</html>
