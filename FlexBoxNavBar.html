@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBoxNavBar</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    *{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+    .container{
+      margin-top: 28px;
+      margin-left:70px;
+      display:flex;
+      justify-content:flex-start;
+    }
+    .items{
+      padding-top:10px;
+      padding-left:60px;
+    }
+    .items:hover{
+      color:rgb(188, 188, 188);
+      cursor: pointer;
+    }
+    .button{
+      margin-top:0px;
+      margin-left:155px;
+      border:2px solid black;
+      padding:10px 20px 10px 20px; 
+      font-weight:bold;
+      border-radius:3px;
+    }
+    .button:hover{
+      cursor: pointer;
+      color:rgb(92, 88, 88);
+    }
+    .globe{
+      margin-top:5px;
+      margin-left:30px;
+      font-size:21px;
+    }
+    p{
+      margin-top: 10px;
+      font-size:15px;
+    }
+   .icon {
+    margin-top:10px;
+      margin-left: 30px;
+      font-size: 26px;
+      color: black;
+      cursor: pointer;
+    }
+     .icon:hover,p:hover {
+      color: rgb(188, 188, 188);
+    }
+     p {
+      margin-top:15px;
+      margin-left: 8px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="heading">UltraEdit</h1>
+      <div class="items">Products</div>
+      <div class="items">Pricing</div>
+      <div class="items">Resources</div>
+      <div class="items">Our company</div>
+      <div class="button">BUY NOW </div>
+      <span class="material-icons icon">public</span>
+      <p>English</p>
+      <span class="material-icons icon">search</span>
+    </div>
+  </header>
+</body>
+</html>
