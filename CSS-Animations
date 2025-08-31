@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animations</title>
+  <style>
+    .container{
+      background-color: rgb(62, 198, 98);
+      width:30vw;
+      height:80vh;
+    }
+    .box{
+      background-color: aqua;
+      width:34px;
+      height:45px;
+      /*animation:samianimation;
+      animation-duration:3s;
+      animation-iteration-count:3;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s;
+      animation-direction:alternate-reverse;
+      animation-play-state:paused;*/
+      animation: samianimation 3s ease-in-out 1s 3 forwards;
+    }
+    @keyframes samianimation{
+      from{
+        background-color: red;
+      }
+      to{
+        background-color:yellow;
+         transform:translateX(1000px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Box</div>
+  </div>
+</body>
+</html>
